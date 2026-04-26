@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Test/Scratch Scripts
+scratch/
+test-*.js
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Build/Dist (if applicable)
+dist/
+build/
