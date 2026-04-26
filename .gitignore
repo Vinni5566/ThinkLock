@@ -1,0 +1,33 @@
+# Environment
+.env
+.env.production
+.env.development
+.env.local
+
+# Build
+dist/
+build/
+.next/
+.cache/
+
+# Dependencies
+node_modules/
+package-lock.json
+bun.lock
+bun.lockb
+
+# System
+.DS_Store
+Thumbs.db
+
+# Backend specific
+backend/.env
+backend/node_modules/
+
+# Testing
+tests-results/
+playwright-report/
+blob-report/
+playwright.config.ts
+vitest.config.ts
+playwright-fixture.ts
