@@ -50,8 +50,6 @@ ThinkLock is packed with tools designed to gamify and protect your intellectual 
 
 *   📈 **AI Dependency Tracker:** Visualize your evolution. Track the ratio of AI assistance vs. human reasoning to ensure your "mental muscle" is growing, not atrophying.
 
-*   🖥️ **Command Center:** A sleek, premium dashboard for your mental metrics. Monitor your cognitive health and track your journey from an "Observer" to a "Logic Mastermind."
-
 ---
 
 ## 🏗️System Architecture
