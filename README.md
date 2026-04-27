@@ -1,171 +1,335 @@
 # 🛡️ ThinkLock | Reclaiming Human Intelligence
 
-![ThinkLock Banner](https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?q=80&w=2000&auto=format&fit=crop)
+## 🚀 Project Overview
+**ThinkLock**
+*Enforced Reasoning in the Age of Instant Automation.*
 
-## 1. Project Overview
-*   **Project Title:** **ThinkLock**
-*   **Tagline:** Enforced Reasoning in the Age of Instant Automation.
-*   **One-Line Description:** A cognitive-first intelligence platform that **blocks instant AI answers**, forcing users to demonstrate active reasoning before unlocking insights.
+A cognitive-first intelligence platform that **blocks instant AI answers**, forcing users to demonstrate active reasoning before unlocking insights.
 
-## 2. Problem Statement
-*   **Current State of AI Usage:** Users treat AI as a "knowledge bypass," leading to **instant gratification** without comprehension.
-*   **Core Problem:** The "Copy-Paste" loop is causing **cognitive atrophy**, where the ability to reason from first principles is being automated away.
-*   **Impact:** Growing **AI dependency**, shallow thinking patterns, and a loss of fundamental problem-solving skills in the modern workforce.
+---
 
-## 3. Solution Overview
-*   **What is ThinkLock:** A **security-gate for thought**. It acts as a middleware between human curiosity and AI knowledge.
-*   **Core Idea:** **Enforced Thinking Layer**. You don't get the answer because you asked; you get it because you **proved you thought about it**.
-*   **High-Level Workflow:** User Question → **Cognitive Challenge** → User Reasoning → **AI Validation** → Answer Unlock.
+## ⚠️ Problem Statement
+*   **Cognitive Atrophy:** The "Copy-Paste" loop is literally making us less capable. By skipping the hard work of thinking, we’re losing the fundamental skills that make human intelligence valuable.
 
-## 4. Key Features
-*   🧠 **Thinking Graph:** Visualizes your logical progression and connection between concepts.
-*   📊 **Cognitive Scoring:** Real-time metrics on your **depth of thought** and logic quality.
-*   🛡️ **Anti-Gaming AI:** Detects if you are trying to "trick" the system or copy-pasting from elsewhere.
-*   ⚙️ **Adaptive Enforcement:** Increases challenge difficulty if it detects **lazy thinking** patterns.
-*   ⏪ **Reasoning Replay:** Review your own thought process to identify logical fallacies.
-*   📈 **Dependency Tracker:** Measures how much you rely on AI vs. your own brain over time.
-*   🖥️ **Analytics Dashboard:** A premium command center for your **cognitive growth** metrics.
+*   **The Illusion of Competence:** Getting the right answer isn't the same as understanding it. We're creating a world of "answer-getters" who can't explain the logic behind their own work.
 
-## 5. System Architecture
-*   **Architecture Diagram:** Uses a **Micro-Orchestration** pattern between the Frontend, Node.js Backend, and AI Service.
-*   **Data Flow:** `User Request` → `Zod Validation` → `Gemini Reasoning Audit` → `MongoDB State Save` → `n8n Intelligence Loop`.
-*   **Component Overview:** Modular architecture with strict separation between **Persistence**, **Orchestration**, and **Validation**.
+*   **Passive Intelligence:** We’ve become secondary characters in our own intellectual lives. We are letting algorithms lead the way while our own critical thinking stays in the passenger seat.
 
-## 6. Tech Stack
-*   **Frontend:** **React 18**, **TypeScript**, **Vite**, **Tailwind CSS**, **Shadcn UI**, **Framer Motion**.
-*   **Backend:** **Node.js**, **Express**, **Winston** (Logging).
-*   **Database:** **MongoDB Atlas** (using Mongoose).
-*   **AI Layer:** **Google Gemini 3 Flash** & **Pro** (via Generative AI SDK).
-*   **Workflow Automation:** **n8n Cloud** (for async behavioral analysis).
-*   **DevOps / Deployment:** **Vercel** (Frontend), **Render** (Backend).
+*   **The Logic Void:** There is no growth in instant results. Growth happens in the struggle of reasoning, and we’ve successfully automated that struggle away.
 
-## 7. Project Structure
-*   **Repo Layout:** Logical split between `frontend` (root) and `backend/` directory.
-*   **Frontend Structure:** `/src/components` (UI), `/src/pages` (Views), `/src/store` (State).
-*   **Backend Structure:** `/src/services` (Logic), `/src/controllers` (API), `/src/models` (Data).
-*   **Key Modules:** **AI Service** (Core intelligence), **Outbox Worker** (Reliable event delivery).
+*   **The Dependency Debt:** Every AI shortcut is a debt we owe to our future selves. We are trading long-term cognitive power for short-term speed, leading to a massive "logic gap" when the tools fail.
 
-## 8. Core Backend Design
-*   **Service Layer:** Business logic is **completely decoupled** from API routes.
-*   **Controller Layer:** Handles HTTP concerns and delegates to services.
-*   **Middleware Layer:** Includes **Rate Limiting**, **Auth Guards**, and **Security Headers**.
-*   **Validation Layer:** Powered by **Zod** for strict runtime type checking.
-*   **Error Handling:** Centralized **Global Error Handler** with specialized `AppError` classes.
+---
 
-## 9. AI Pipeline Design
-*   **Prompting Strategy:** Uses **System Instructions** to enforce a "Strict Tutor" persona.
-*   **JSON Mode:** All AI responses are forced into **Structured JSON** for programmatic parsing.
-*   **Response Validation:** Backend audits AI scores to ensure they are within **logical bounds**.
-*   **Failover Strategy:** Automatic switch from **Flash** to **Pro** if reasoning quality drops.
-*   **Retry Mechanism:** Exponential backoff for **429 (Rate Limit)** errors.
+ThinkLock isn't just another AI tool—it's a **cognitive gatekeeper**. In a world that values speed over substance, ThinkLock enforces a "thinking tax" on every query. It acts as a bridge between human curiosity and artificial intelligence, ensuring that while the AI provides the answers, your brain does the heavy lifting.
 
-## 10. Data Models
-*   **User:** Identity and **Cognitive Profile** settings.
-*   **Session:** Tracks a specific reasoning journey.
-*   **Message:** Stores content, **AI-Audit results**, and logic flags.
-*   **Cognitive Metrics:** Aggregated data points for **reasoning depth**.
-*   **Event:** Durable records for **Outbox processing**.
+*   **The Cognitive Firewall:** ThinkLock is the first middleware designed to protect your brain. It stops AI from giving you the answer until you prove you’ve actually engaged with the problem.
 
-## 11. Thinking Graph Design
-*   **Node Types:** `Premise`, `Inference`, `Conclusion`, `Fallacy`.
-*   **Edge Relationships:** `Supports`, `Contradicts`, `Derives From`.
-*   **Graph Construction:** Built dynamically as the user adds **Reasoning Nodes**.
-*   **Storage Strategy:** Adjacency list stored in **MongoDB** for fast traversal.
+*   **From "Search" to "Solve":** We replace the lazy "Ask and Receive" loop with a "Prove and Unlock" system. You don't get the insight because you asked; you get it because you earned it through active reasoning.
 
-## 12. Anti-Gaming System
-*   **Detection Logic:** Analyzes **Response Latency**, **Semantic Overlap**, and **Prompt Injection** attempts.
-*   **Escalation:** `Warning` → `Locked Session` → `Cognitive Reset`.
-*   **Edge Cases:** Handles "Short but Brilliant" answers vs. "Long and Wordy" filler.
+*   **Thought-Audit Engine:** Our system doesn't just look for answers—it audits your logic. It evaluates *how* you think, ensuring your reasoning is sound before granting access to the AI's power.
 
-## 13. Dependency Tracking System
-*   **Metrics:** **AI-to-Human Ratio**, **Hint Reliance**, **Time-to-Reason**.
-*   **Scoring:** Weighted average that favors **independent conclusions**.
-*   **Trends:** Weekly reports on whether your **reasoning muscle** is growing or atrophying.
+*   **Friction on Purpose:** Most tools try to be "seamless." ThinkLock adds intentional friction to re-engage your brain, forcing you out of autopilot and back into deep, critical thinking.
 
-## 14. Cognitive Scoring System
-*   **Parameters:** **Logical Consistency**, **Depth of Inquiry**, **First Principles Application**.
-*   **Weighting:** **Depth** is weighted 2x higher than **Speed**.
-*   **Interpretation:** Scores are mapped to tiers: `Observer`, `Thinker`, `Architect`, `Mastermind`.
+*   **The Reasoning Loop:** A simple, high-impact flow: **Question** → **Challenge** → **Proof** → **Unlock**. Every interaction becomes a mental workout, turning AI into a partner for growth rather than a crutch for laziness.
 
-## 15. n8n Integration
-*   **Dispatching:** Backend pushes events to an **Event Outbox**.
-*   **Webhook:** n8n listens via **Secure Webhooks** for behavioral signals.
-*   **Async Processing:** n8n handles heavy **Trend Analysis** without blocking the user.
-*   **Feedback Loop:** n8n updates the **User Classification** in MongoDB via API.
+---
 
-## 16. API Design
-*   **Overview:** **RESTful API** with clear resource-based routing.
-*   **Authentication:** **JWT-based** stateless authentication.
-*   **Core Endpoints:** `POST /api/chat/send`, `GET /api/chat/profile/:id`.
-*   **Idempotency:** Supports `Idempotency-Key` headers for **fault-tolerant** retries.
+## Key Features
+ThinkLock is packed with tools designed to gamify and protect your intellectual growth. Every module is built to ensure you’re not just getting answers, but building a better brain.
 
-## 17. Validation & Error Handling
-*   **Strategy:** **Fail-Fast** at the edge using Zod schemas.
-*   **AI Validation:** Recursive checking of AI-generated JSON.
-*   **Classification:** `OperationalError` (User fault) vs. `ProgrammingError` (System fault).
+*   🧠 **Thinking Graph:** A dynamic, visual map of your logic. Watch as your premises, inferences, and conclusions form a living network of your own reasoning.
 
-## 18. Logging & Observability
-*   **Strategy:** **Winston** structured logging in JSON format.
-*   **Structure:** `timestamp`, `level`, `correlationId`, `message`, `metadata`.
-*   **Monitoring:** Health check endpoints for **Render/Vercel** uptime monitoring.
+*   📊 **Cognitive Scoring:** Get real-time feedback on your **Depth of Thought**. Our proprietary algorithm scores your logic quality, consistency, and first-principles application.
 
-## 19. Rate Limiting & Security
-*   **Rate Limiting:** IP-based limits to prevent **AI Token Abuse**.
-*   **API Security:** **Helmet.js** for secure headers and **CORS** strict allow-listing.
-*   **Secrets:** Managed via **Environment Variables** (never committed to Git).
+*   🛡️ **Anti-Gaming Shield:** Our AI-driven security layer detects "shortcut behaviors" and copy-pasted input, ensuring you’re actually thinking and not just tricking the system.
 
-## 20. Performance & Scalability
-*   **Transaction Strategy:** Mongoose **Atomic Sessions** for data integrity.
-*   **Async Processing:** AI calls happen **outside** DB transactions to prevent locks.
-*   **Scaling:** Stateless design allows for **horizontal scaling** across multiple instances.
+*   ⚙️ **Adaptive Difficulty:** ThinkLock grows with you. The system detects "lazy patterns" and increases the reasoning friction to force you out of your cognitive comfort zone.
 
-## 21. Testing Strategy
-*   **Automated Tests:** **Vitest** for unit tests, **Playwright** for E2E flows.
-*   **Manual Testing:** Dedicated scripts in `backend/scratch/` for **pipeline verification**.
-*   **Edge Case Coverage:** Tests for **AI Hallucinations** and **Network Failure** scenarios.
+*   ⏪ **Reasoning Replay:** Review your thought process like a pro. Revisit past sessions to identify logical fallacies and sharpen your future problem-solving skills.
 
-## 22. Deployment
-*   **Environment Setup:** Requires **production-ready** MongoDB Atlas cluster.
-*   **Backend Deployment (Render):** Deployed as a Node.js Web Service with a `start` script.
-*   **Frontend Deployment (Vercel):** Connected via GitHub for automatic CI/CD.
-*   **Environment Variables:** Strictly managed via platform dashboards.
+*   📈 **AI Dependency Tracker:** Visualize your evolution. Track the ratio of AI assistance vs. human reasoning to ensure your "mental muscle" is growing, not atrophying.
 
-## 23. Configuration
-*   **Required Environment Variables:** `MONGO_URI`, `GEMINI_API_KEY`, `N8N_API_KEY`, `VITE_API_BASE_URL`.
-*   **Optional Configurations:** `LOG_LEVEL`, `MAX_AI_RETRIES`, `CIRCUIT_BREAKER_THRESHOLD`.
+*   🖥️ **Command Center:** A sleek, premium dashboard for your mental metrics. Monitor your cognitive health and track your journey from an "Observer" to a "Logic Mastermind."
 
-## 24. Usage Guide
-*   **How to Use the App:** Sign up, enter the **Reasoning Lab**, and submit your thoughts.
-*   **Example Flow:** User asks question → AI poses challenge → User reasons → AI unlocks answer.
-*   **Screens / UI Overview:** **Dashboard**, **Reasoning Lab**, **Analytics**, and **Settings**.
+---
 
-## 25. Screenshots / Demo
+## System Architecture
+ThinkLock follows a **Micro-Orchestration** pattern designed for high-integrity cognitive validation and state management.
+
+```mermaid
+graph TD
+    User([User]) -->|1. Input Question| FE[Frontend: React/Vite]
+    FE -->|2. API Call| BE[Backend: Node.js/Express]
+    BE -->|3. Strict Schema| Zod[Zod Validation]
+    Zod -->|4. Audit Reasoning| AI[AI Service: Gemini 3 Flash]
+    AI -->|5. Score Logic| BE
+    BE -->|6. Persistence| DB[(MongoDB Atlas)]
+    BE -->|7. Async Intelligence| n8n[n8n Workflow]
+    n8n -->|8. Update Profile| DB
+    BE -->|9. Unlock Answer| FE
+```
+
+### Component Breakdown
+*   **Frontend (React/Vite):** A premium, responsive interface that visualizes the **Thinking Graph** and provides real-time logical feedback.
+
+*   **Orchestration Layer (Node.js):** The central engine that manages session states, enforces security guards, and coordinates between the user and AI.
+
+*   **Intelligence Layer (Gemini 3):** Our "Strict Tutor" that audits human reasoning, detects fallacies, and generates adaptive challenges.
+
+*   **Validation Layer (Zod):** Guarantees runtime data integrity, ensuring that every reasoning node conforms to strict logical structures.
+
+*   **Persistence (MongoDB):** A document-based store for reasoning journeys, cognitive profiles, and high-fidelity event logs.
+
+*   **Async Analysis (n8n):** Offloads heavy behavioral trend analysis and cognitive scoring to an asynchronous workflow loop to maintain zero-latency UX.
+
+---
+
+### Step-by-Step Data Flow Walkthrough
+1.  **Input Question:** The user starts their journey by submitting a prompt. Instead of a direct answer, the system analyzes the complexity of the query to prepare a tailored cognitive challenge.
+
+2.  **API Call:** The React frontend communicates with the Express backend via a secure REST API. This request carries the user's intent and current session context.
+
+3.  **Strict Schema:** Before any processing, **Zod** performs a deep schema audit. This ensures that the incoming data is sanitized and conforms to our internal logic models, preventing injection attacks.
+
+4.  **Audit Reasoning:** The backend hands the request to the **Gemini 3** engine. The AI doesn't solve the problem; instead, it identifies the "Reasoning Gap"—the logical steps the user *must* take to earn the answer.
+
+5.  **Score Logic:** As the user submits their reasoning nodes, the AI evaluates them for logical consistency, depth, and fallacies. It returns a "Depth Score" that determines if the user has thought deeply enough.
+
+6.  **Persistence:** Every interaction, including every node in the thinking graph, is persisted in **MongoDB Atlas**. This ensures session durability and provides the raw data for cognitive analytics.
+
+7.  **Async Intelligence:** To keep the UI fast, heavy behavioral analysis is offloaded to **n8n**. This workflow analyzes "Time-to-Reason" and logical complexity without blocking the main event loop.
+
+8.  **Update Profile:** n8n uses the analyzed data to update the user's long-term **Cognitive Profile**, tracking their evolution from an "Observer" to a "Logic Mastermind."
+
+9.  **Unlock Answer:** Only after the AI confirms that the user's reasoning is sound and the Depth Score meets the required threshold does the backend finally release the "Locked" answer.
+
+---
+
+## 🛠️ Tech Stack
+| Layer | Technologies | Purpose |
+| :--- | :--- | :--- |
+| **Frontend** | React 18, TypeScript, Vite, Tailwind CSS, Shadcn UI, Framer Motion | Premium UI/UX, Type-safe components, Smooth animations. |
+| **Backend** | Node.js, Express, Winston | Scalable API orchestration, structured logging. |
+| **Database** | MongoDB Atlas, Mongoose | High-fidelity persistence for reasoning journeys. |
+| **AI Layer** | Google Gemini 3 Flash & Pro | Reasoning audits, cognitive scoring, challenge generation. |
+| **Automation** | n8n Cloud | Async behavioral analysis and background intelligence. |
+| **DevOps** | Vercel, Render | Automated deployment and high-availability hosting. |
+
+---
+
+## 📂 Project Structure
+```text
+ThinkLock/
+├── backend/                    # Node.js + Express.js Server
+│   ├── src/
+│   │   ├── controllers/        # Request Handlers
+│   │   │   ├── chat.controller.js
+│   │   │   └── session.controller.js
+│   │   ├── middlewares/        # Security & Validation
+│   │   │   ├── auth.middleware.js
+│   │   │   └── error.middleware.js
+│   │   ├── models/             # Mongoose Data Models
+│   │   │   ├── session.model.js
+│   │   │   └── message.model.js
+│   │   ├── routes/             # API Endpoints
+│   │   │   ├── chat.routes.js
+│   │   │   └── session.routes.js
+│   │   ├── services/           # Core Business & AI Logic
+│   │   │   ├── message.service.js
+│   │   │   └── session.service.js
+│   │   └── app.js              # Express App Config
+│   ├── server.js               # Entry Point
+│   └── package.json
+├── src/                        # React + Vite Frontend
+│   ├── components/             # UI Components
+│   │   ├── dashboard/          # Dashboard specific UI
+│   │   ├── ui/                 # Shadcn UI Components
+│   │   └── DashboardLayout.tsx
+│   ├── pages/                  # View Components
+│   │   ├── dashboard/          # Reasoning Lab, Control Room
+│   │   ├── About.tsx
+│   │   ├── Login.tsx
+│   │   └── Signup.tsx
+│   ├── store/                  # State Management
+│   │   └── useChatStore.ts     # Chat & Reasoning State
+│   ├── App.tsx                 # Routing & Core Layout
+│   ├── index.css               # Design System & Tailwind
+│   └── main.tsx                # App Bootstrap
+├── tailwind.config.ts          # Styling Token Config
+└── vite.config.ts              # Build Orchestration
+```
+
+---
+
+## ⚙️ Core Backend Design
+ThinkLock's backend is built for **resilience and logical integrity**. It follows a strict "Decoupled Orchestration" model to ensure that AI validation and user state remain synchronized at all times.
+
+*   **Modular Service Architecture:**
+    *   Business logic is **100% decoupled** from the Express routing layer.
+    *   Services handle complex AI audits, session state transitions, and cognitive scoring.
+    *   Enables independent testing of core logic without mocking HTTP requests.
+
+*   **Controller Isolation Pattern:**
+    *   Controllers focus purely on **request parsing and response formatting**.
+    *   Delegates all heavy lifting to specialized services, keeping the API layer lean.
+    *   Maintains a clean separation of concerns and improves code discoverability.
+
+*   **Multi-Stage Middleware Pipeline:**
+    *   **Auth Guards:** Strict JWT-based session validation for all protected routes.
+    *   **Security Headers:** Helmet.js and CORS pre-configured for enterprise-grade safety.
+    *   **Rate Limiting:** Protects sensitive AI endpoints from brute-force "gaming" or spam attempts.
+
+*   **Strict Runtime Validation (Zod):**
+    *   Every incoming API request is validated against **Zod schemas** at the edge.
+    *   Provides "Fail-Fast" protection, ensuring only sanitized data reaches the logic layer.
+    *   Eliminates "undefined" errors by enforcing strict type contracts at runtime.
+
+*   **Fault-Tolerant Error Handling:**
+    *   Centralized **Global Error Middleware** catches all operational and programmer errors.
+    *   Uses specialized `AppError` classes to categorize errors (Validation, Auth, Logic, etc.).
+    *   Structured logging via **Winston** for high observability and debugging in production.
+
+*   **Reliable Event Sync:**
+    *   Uses an **Event Outbox** pattern to ensure state changes are reliably synced with background services.
+    *   Ensures the **n8n Intelligence Loop** always receives the necessary signals for behavioral analysis.
+
+---
+
+## 🤖 AI Pipeline Design
+The ThinkLock AI pipeline is the **core cognitive engine** of the platform. It uses a multi-layered validation strategy to ensure that AI-generated challenges and human-logic audits are both rigorous and accurate.
+
+*   **System-Enforced Personas:**
+    *   Uses advanced **System Instructions** to lock models into a "Strict Socratic Tutor" persona.
+    *   Prevents models from giving direct answers, forcing them to focus entirely on **logical deconstruction** and challenge generation.
+
+*   **Deterministic JSON Mode:**
+    *   All AI interactions are forced into **Strict JSON Mode** for reliable backend parsing.
+    *   Schemas are pre-defined to capture **Depth Scores**, **Logical Fallacies**, and **Reasoning Gaps** in a structured format.
+
+*   **Multi-Model Orchestration:**
+    *   **Gemini 3 Flash:** Handles fast, initial audits and challenge generation to maintain low latency.
+    *   **Gemini 3 Pro:** Reserved for deep reasoning validation and complex edge-case logical audits where high precision is required.
+
+*   **Intelligent Failover & Resilience:**
+    *   **Quality-Based Failover:** Automatically promotes a task from Flash to Pro if the initial reasoning audit is ambiguous or low-quality.
+    *   **Retry with Backoff:** Implements exponential backoff to handle **429 (Rate Limit)** errors gracefully during peak usage windows.
+
+*   **Score Normalization & Validation:**
+    *   Backend audits all AI-generated scores to ensure they fall within **expected logical bounds**.
+    *   Prevents "Score Inflation" or "Hallucinated Logic" by cross-referencing AI outputs with the user's historical cognitive profile.
+
+*   **Reasoning Gap Identification:**
+    *   The pipeline doesn't just check for "Correctness"; it identifies the specific **logical steps** a user missed.
+    *   Enables the **Adaptive Difficulty** system to pinpoint exactly where a user's reasoning needs strengthening.
+
+---
+
+## 💾 Data Models
+ThinkLock uses a **highly relational document model** within MongoDB to track the evolution of human logic. The schema is designed for both high-fidelity persistence and fast analytical traversal.
+
+*   **User & Cognitive Profile:**
+    *   Stores core identity, authentication data, and the **Cognitive Evolution** state.
+    *   Tracks tier-based rankings (e.g., Observer, Thinker, Mastermind) and historical logic performance.
+
+*   **Reasoning Session:**
+    *   The primary container for a single cognitive journey from question to unlock.
+    *   Maintains the "Lock" status, active graph nodes, and the **Adaptive Difficulty** settings.
+
+*   **Message & Logic Audit:**
+    *   Stores user input alongside deep metadata from the **AI Audit pipeline**.
+    *   Captures detected logical fallacies, reasoning depth scores, and specific logic flags.
+
+*   **Cognitive Metrics (Timeseries):**
+    *   Aggregated snapshots of a user's reasoning consistency, depth, and speed over time.
+    *   Powers the **Dependency Tracker** and real-time dashboard trend visualizations.
+
+*   **Reliability Event (Outbox):**
+    *   Durable records of critical system events (e.g., `SESSION_COMPLETED`, `LOGIC_FAIL`).
+    *   Ensures 100% reliability for asynchronous sync with background intelligence services (n8n).
+
+*   **Thinking Graph Node:**
+    *   Represents atomic units of reasoning: **Premise**, **Inference**, **Conclusion**, and **Fallacy**.
+    *   Stored with adjacency metadata to allow for dynamic graph rendering in the frontend.
+
+---
+
+## 🧠 Thinking Graph Design
+*   **Dynamic Node Types:** Categorizes reasoning into `Premise`, `Inference`, `Conclusion`, and `Fallacy`.
+*   **Semantic Relationships:** Uses `Supports`, `Contradicts`, and `Derives From` to build a logical web.
+*   **Real-time Construction:** Nodes are added dynamically by the user to visualize their thought flow.
+*   **Persistence Strategy:** Optimized adjacency list storage in **MongoDB** for rapid graph traversal.
+
+---
+
+## 🛡️ Anti-Gaming System
+*   **Multi-Signal Detection:** Analyzes **Response Latency**, **Semantic Overlap**, and **Prompt Injection** patterns.
+*   **Escalation Protocol:** Follows a strict `Warning` → `Locked Session` → `Cognitive Reset` workflow.
+*   **Smart Filtering:** Distinguishes between concise logic and "word salad" filler intended to trick the auditor.
+
+---
+
+## 📈 Dependency Tracking System
+*   **Core Metrics:** Tracks **AI-to-Human Ratio**, **Hint Reliance**, and **Average Time-to-Reason**.
+*   **Weighted Scoring:** Favors independent logic over "assisted" conclusions to ensure true growth.
+*   **Trend Reporting:** Weekly analytics on whether your **reasoning muscle** is strengthening or atrophying.
+
+---
+
+## 📊 Cognitive Scoring System
+*   **Logic Parameters:** Evaluates **Logical Consistency**, **Depth of Inquiry**, and **First Principles Application**.
+*   **Weighted Metrics:** **Depth** is weighted 2x higher than speed to discourage superficial rapid-fire answers.
+*   **Tier Progression:** Users advance through `Observer`, `Thinker`, `Architect`, and `Mastermind` based on performance.
+
+---
+
+## 🔗 n8n Integration
+*   **Event Dispatching:** Backend pushes high-fidelity behavioral signals to a durable **Event Outbox**.
+*   **Secure Webhooks:** n8n consumes these events via encrypted webhooks for external intelligence processing.
+*   **Heavy Lifting:** Offloads complex **Trend Analysis** and long-term behavioral auditing from the main API.
+*   **State Feedback:** n8n programmatically updates **User Classifications** in MongoDB via secure API callbacks.
+
+---
+
+## 📡 API Design
+*   **RESTful Architecture:** Clear, resource-based routing for sessions, messages, and profiles.
+*   **Secure Auth:** Stateless **JWT-based** authentication with secure HTTP-only cookies.
+*   **Core Flow:** High-performance endpoints for `POST /api/chat/send` and `GET /api/chat/profile`.
+*   **Fault Tolerance:** Native support for `Idempotency-Key` headers to handle network retries safely.
+
+---
+
+## ✅ Validation & Error Handling
+*   **Edge Validation:** Uses **Zod** for strict, fail-fast schema validation at the entry point.
+*   **AI JSON Integrity:** Recursive validation of AI-generated responses to ensure logic-score consistency.
+*   **Error Taxonomy:** Clearly distinguishes between `OperationalError` (User) and `ProgrammingError` (System).
+
+---
+
+## 📸 Screenshots / Demo
 *   **UI Screenshots:** (Add screenshots here)
 *   **Demo GIF / Video:** (Add video link here)
 *   **Sample Outputs:** High-depth reasoning vs. lazy thinking examples.
 
-## 26. Limitations
+---
+
+## 🛑 Limitations
 *   **Current Constraints:** AI latency and free-tier **cold starts**.
 *   **Known Issues:** Minor rendering delays on complex graphs.
 *   **Trade-offs:** Speed is sacrificed for **reasoning depth**.
 
-## 27. Future Improvements
-*   **Planned Features:** **Offline Mode**, **Team Mode**, and **Mobile App**.
-*   **Scalability Enhancements:** Redis caching for reasoning nodes.
-*   **AI Improvements:** Fine-tuned models for specific technical domains.
+---
 
-## 28. Contribution Guide
-*   **How to Contribute:** Fork the repo, create a branch, and submit a PR.
-*   **Coding Standards:** Follow **Airbnb Style Guide** and strict **TypeScript** typing.
-*   **PR Guidelines:** Descriptive titles and passing CI tests required.
+## 🔮 Future Improvements
+*   **Collaborative Logic:** **Team Mode** for group-based reasoning and collective problem-solving.
+*   **Offline Mode:** Local-first reasoning storage for intermittent connectivity.
+*   **Domain Expertise:** Fine-tuned AI models for specific technical domains (Engineering, Law, Medicine).
 
-## 29. License
-*   **License Type:** **MIT License**.
+---
 
-## 30. Acknowledgements
-*   **Tools / APIs Used:** **Google Gemini**, **n8n.io**, **Lucide Icons**.
-*   **Inspirations:** Socratic method and cognitive psychology.
-
-## 31. Contact / Maintainers
+## 📧 Maintainers
 *   **Author Info:** **Vinni Kapoor**
+
 *   **Contact Details:** [GitHub](https://github.com/Vinni5566)
+
+---
