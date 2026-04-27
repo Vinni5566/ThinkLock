@@ -306,13 +306,6 @@ ThinkLock uses a **highly relational document model** within MongoDB to track th
 
 ---
 
-## 📸 Screenshots / Demo
-*   **UI Screenshots:** (Add screenshots here)
-*   **Demo GIF / Video:** (Add video link here)
-*   **Sample Outputs:** High-depth reasoning vs. lazy thinking examples.
-
----
-
 ## 🛑 Limitations
 *   **Current Constraints:** AI latency and free-tier **cold starts**.
 *   **Known Issues:** Minor rendering delays on complex graphs.
