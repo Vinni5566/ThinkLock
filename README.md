@@ -20,7 +20,7 @@ A cognitive-first intelligence platform that **blocks instant AI answers**, forc
 *   **The Dependency Debt:** Every AI shortcut is a debt we owe to our future selves. We are trading long-term cognitive power for short-term speed, leading to a massive "logic gap" when the tools fail.
 
 ---
-
+## 💡Solution
 ThinkLock isn't just another AI tool—it's a **cognitive gatekeeper**. In a world that values speed over substance, ThinkLock enforces a "thinking tax" on every query. It acts as a bridge between human curiosity and artificial intelligence, ensuring that while the AI provides the answers, your brain does the heavy lifting.
 
 *   **The Cognitive Firewall:** ThinkLock is the first middleware designed to protect your brain. It stops AI from giving you the answer until you prove you’ve actually engaged with the problem.
@@ -35,7 +35,7 @@ ThinkLock isn't just another AI tool—it's a **cognitive gatekeeper**. In a wor
 
 ---
 
-## Key Features
+## 🔑Key Features
 ThinkLock is packed with tools designed to gamify and protect your intellectual growth. Every module is built to ensure you’re not just getting answers, but building a better brain.
 
 *   🧠 **Thinking Graph:** A dynamic, visual map of your logic. Watch as your premises, inferences, and conclusions form a living network of your own reasoning.
@@ -54,7 +54,7 @@ ThinkLock is packed with tools designed to gamify and protect your intellectual 
 
 ---
 
-## System Architecture
+## 🏗️System Architecture
 ThinkLock follows a **Micro-Orchestration** pattern designed for high-integrity cognitive validation and state management.
 
 ```mermaid
